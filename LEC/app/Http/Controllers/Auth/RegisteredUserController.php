@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 
+//https://dev.to/kingsconsult/customize-laravel-auth-laravel-breeze-registration-and-login-1769
+
 class RegisteredUserController extends Controller
 {
     /**
