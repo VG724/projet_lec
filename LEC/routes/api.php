@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +26,10 @@ Route::get('teams', [ApiController::class, 'getTeams']);
 Route::get('/bets', [ApiController::class, 'getBets']);
 Route::get('/bets/{user_id}',[ApiController::class,'getBetsUser']);
 
-Route::post('/days', [ApiController::class, 'addDays']);
-Route::post('/days/{lec_day_id}/matches', [ApiController::class, 'addMatchesDay']);
-Route::post('teams', [ApiController::class, 'addTeams']);
-Route::post('/bets/{user_id}', [ApiController::class,'addBetsUser']);
+Route::post('/day', [ApiController::class, 'addDay']);
+Route::post('/days/{lec_day_id}/matches', [ApiController::class, 'addMatchDay']);
+Route::post('matches/{lec_match_id}',[ApiController::class, 'updateMatch']);
+Route::post('team', [ApiController::class, 'addTeam']);
+Route::post('/bets/{user_id}', [ApiController::class,'addBetUser']);
 
 

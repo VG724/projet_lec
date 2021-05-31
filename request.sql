@@ -1,12 +1,16 @@
-INSERT INTO lec_team (acronym, name) VALUES('vit','vitality');
-
-INSERT INTO lec_match(id_team1, id_team2) VALUES(1,2);
-
-UPDATE lec_match
-SET id_winner = 1
-WHERE id = 1;
-
-INSERT INTO lec_bet (id_user, id_lec_match, id_bet) VALUES(1, 1, 1);
-
-
-(pas à jour)
+INSERT INTO lec_team (acronym, name) VALUES 
+	 ('G2','G2 Esports'),
+     ('FNC','Fnatic'),
+     ('RGE','Rogue'),
+     ('VIT','Vitality');
+	 
+INSERT INTO lec_day (day) VALUES 
+	(CURRENT_TIMESTAMP),
+    (CURRENT_TIMESTAMP),
+    (CURRENT_TIMESTAMP),
+    (CURRENT_TIMESTAMP);
+	
+INSERT INTO lec_match (day_id,team1_id,team2_id, winner_id) VALUES
+     (1, 1, 2, 1),
+     (2, 2, 3, NULL),
+     (3, 1, 3, NULL);
