@@ -14,3 +14,10 @@ INSERT INTO lec_match (day_id,team1_id,team2_id, winner_id) VALUES
      (1, 1, 2, 1),
      (2, 2, 3, NULL),
      (3, 1, 3, NULL);
+
+INSERT INTO lec_bet (score, user_id, lec_match_id, winner_id) VALUES
+	(1000, 1, 1, 1),
+	(1500, 2, 1, 2),
+	(3000, 1, 2, 2),
+	(500, 2, 3, 3);
+    
