@@ -6,18 +6,22 @@ use Illuminate\Support\Facades\DB;
 
 class LEC{
     
+    /*SELECT * FROM lec_day*/
     public static function getDays(){
 
     }
 
+    /*SELECT * FROM lec_match*/
     public static function getMatches(){
         
     }
 
+    /*SELECT * FROM lec_match WHERE day_id = $day_id*/
     public static function getMatchesDay($day_id){
 
     }
 
+    /*SELECT * FROM lec_team*/
     public static function getTeams(){
 
     }
