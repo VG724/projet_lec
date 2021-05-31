@@ -7,3 +7,6 @@ SET id_winner = 1
 WHERE id = 1;
 
 INSERT INTO lec_bet (id_user, id_lec_match, id_bet) VALUES(1, 1, 1);
+
+
+(pas à jour)
