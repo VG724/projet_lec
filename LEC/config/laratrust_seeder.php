@@ -26,7 +26,6 @@ return [
         ]
     ],
 
-    //https://www.youtube.com/watch?v=VHhmfjhu_1g
     'permissions_map' => [
         'c' => 'create',
         'r' => 'read',
